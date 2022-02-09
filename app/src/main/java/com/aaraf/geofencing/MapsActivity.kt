@@ -206,7 +206,7 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback, GoogleMap.OnMapLon
             // for ActivityCompat#requestPermissions for more details.
             return
         }
-        geofencingClient!!.addGeofences(geofencingRequest, pendingIntent)
+        geofencingClient!!.addGeofences(geofencingRequest, pendingIntent!!)
             .addOnSuccessListener(OnSuccessListener<Void?> {
                 Log.d(
                     TAG,
